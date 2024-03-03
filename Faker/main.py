@@ -23,7 +23,9 @@ def faker_person_create():
     age, b_date = calculate_age()
     credit_card = f'{faker.credit_card_number()}, Срок действия: {faker.credit_card_expire()}, ' \
                   f'CVS-код: {faker.credit_card_security_code()}'
-    dict_mail = ['@mail.ru', '@yandex.ru', '@rambler.ru', '@gmail.com', '@bk.ru']
+    dict_mail = ['@mail.ru', '@yandex.ru', '@rambler.ru', '@gmail.com', '@bk.ru', '@list.ru', '@inbox.ru', '@google.com', '@live.ru'
+
+]
     name_f = faker.name()
     vk_ur = f'{str(name_f).split()[0].lower()}_{str(name_f).split()[2][:4].lower()}'
     dict_person = {'Ф.И.О.': name_f, 'Дата рождения': b_date, 'Возраст': age, 'Место работы': faker.company(),
