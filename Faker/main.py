@@ -32,7 +32,6 @@ def faker_person_create():
                    'Профиль VK': "https://vk.com/" + translit(vk_ur, language_code='ru', reversed=True). \
                        replace("'", "").replace(".", ""),
                    'Банковская карта': credit_card,
-                   'О себе': faker.text(max_nb_chars=1000),
                    }
 
     return dict_person
@@ -55,5 +54,5 @@ def main():
         print_person_data(dict_person, i)
 
 
-if __name__ == '_main_':
+if __name__=='__main__':
     main()
