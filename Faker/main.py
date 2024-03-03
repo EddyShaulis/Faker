@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+__author__ = 'EddyShaulis'
+
 from datetime import date
 from random import choice
 
